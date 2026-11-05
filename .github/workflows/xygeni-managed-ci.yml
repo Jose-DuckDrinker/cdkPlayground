@@ -9,8 +9,7 @@ on:
         required: false
         default: 'secrets,sast,deps,iac,misconf,malware,codetamper,apisec,ai,quality,compliance,inventory,suspectdeps'
   # no pull request triggers
-  schedule:
-    - cron: '0 21 * * *'
+  # no schedule triggers
 
 # the scan reads the code and, when pull requests are not blocked, comments on them
 permissions:
